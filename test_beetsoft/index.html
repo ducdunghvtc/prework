@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/float-label-css/1.0.2/float-label.css" integrity="sha512-GMyeFHXXqU8RubxiWiyZqDgyFOmR8+jfl9m80fruu/E0VgB+e5Okw23MIIvz/BMD9WnXa26p2qXLFDqXyyeImw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/float-label-css/1.0.2/float-label.min.css" integrity="sha512-do6mlRTj3wXyR+NteKUQe+lYsAbWeaKBF8G2xcojpoww7KrRvd4kLkqjjCP0WXj/ekjqUcYX8ZiZjEHDHJ4e9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Reva</title>
+</head>
+<body>
+    <header>
+      <div class="container header-content">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg text-white w-100 justify-content-between ml-md-auto p-0">
+            <a href="./index.html" class="header-logo p-0 text-white d-flex align-items-center">
+              REVA
+            </a>
+            <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#header__navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="header__navbar">
+              <ul class="navbar-nav ml-auto align-lg-items-center">
+                <li class="nav-item active h-100 ">
+                  <a class="nav-link h-100 d-flex align-items-center" href="./index.html">Giải pháp</a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link h-100 d-flex align-items-center" href="#">
+                    Giá trị
+                  </a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link h-100 d-flex align-items-center" href="#">
+                    Tính năng
+                  </a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link h-100 d-flex align-items-center" href="#">
+                    Khách hàng
+                  </a>
+                </li>
+                <li class="nav-item h-100">
+                  <a class="nav-link h-100 d-flex align-items-center"  href="#">
+                    Liên hệ
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row flex-column">
+          <div class="heading">
+            <h3 class="title">GIẢI PHÁP CÁCH MẠNG 4.0 <br> CHO NGÀNH BÁN LẺ</h3>
+            <p class="description">
+              Hỗ trợ quản lý cửa hàng, tối đa lợi nhuận của doanh nghiệp.
+            </p>
+            <p class="description">
+              Giải phóng hầu hết các công việc của chủ cửa hàng, nhân viên marketing,
+              các cấp quản lý cho đến các nhân viên thông thường.
+            </p>
+            <p class="description">Free
+              <span>1 tháng</span>
+              sử dụng gói Starter cho
+              <span>50 box đầu tiên</span>
+            </p>
+            <p class="description d-block d-lg-none text-center">
+              +84 24 3554 5190
+              <i class="fas fa-phone" style="color: #efa00b"></i>
+            </p>
+          </div>
+          <div class="countdown-container d-lg-flex d-none text-center">
+            <div class="days-container d-flex flex-column justify-content-center rounded-circle bg-white">
+              <div class="days"></div>
+              <div class="days-label">Ngày</div>
+            </div>
+            <div class="hours-container d-flex flex-column justify-content-center rounded-circle bg-white">
+              <div class="hours"></div>
+              <div class="hours-label">giờ</div>
+            </div>
+            <div class="minutes-container d-flex flex-column justify-content-center rounded-circle bg-white">
+              <div class="minutes"></div>
+              <div class="minutes-label">phút</div>
+            </div>
+            <div class="seconds-container d-flex flex-column justify-content-center rounded-circle bg-white">
+              <div class="seconds"></div>
+              <div class="seconds-label">giây</div>
+            </div>
+          </div>
+          <form class="d-none d-lg-block">
+            <div class="form-row align-items-center">
+              <div class="col-auto">
+                <label class="sr-only" for="yourEmail">Email của bạn</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-envelope"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="yourEmail" placeholder="Email của bạn">
+                </div>
+              </div>
+              <div class="col-auto">
+                <label class="sr-only" for="yourPhone">Số điện thoại</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text"><i class="fas fa-phone-alt"></i></div>
+                  </div>
+                  <input type="text" class="form-control" id="yourPhone" placeholder="Số điện thoại">
+                </div>
+              </div>
+              <div class="col-auto">
+                <button type="submit" class="btn btn-registration">Đăng ký sử dụng</button>
+              </div>
+            </div>
+          </form>
+          <div class="iframe-container d-block d-lg-none">
+            <iframe width="560" height="315" 
+              src="https://www.youtube.com/embed/xVrUGsnZXZU" 
+              title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="position-absolute wrapper-btn">
+        <button type="submit" class="btn btn-more rounded-circle">
+          <i class="fas fa-chevron-down"></i>
+        </button>
+      </div>
+    </header>
+    <section class="category">
+      <div class="container p-0">
+        <h4 class="category-heading">GIÁ TRỊ CHO CÁC DOANH NGHIỆP</h4>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-1.png" alt="">
+                <h6 class="category-title">Xác định khách hàng <br> mục tiêu</h6>
+                <p class="category-description">
+                  Với chức năng đếm số lượng khách hàng vào ra, nhận diện độ tuổi, 
+                  giới tính của khách hàng tại từng khu vực, 
+                  <span>REVA</span> giúp nắm bắt được luồng khách hàng chính của từng sản phẩm. 
+                  Từ đó, đưa ra được những chiến lược phù hợp với từng phân khúc khách hàng.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-2.png" alt="">
+                <h6 class="category-title">Nắm bắt nhu cầu thị hiếu của khách hàng</h6>
+                <p class="category-description">
+                  Thông qua bản đồ nhiệt giúp thống kê các khu vực tập trung nhiều khách hàng 
+                  và lộ trình di chuyển của họ, việc nắm bắt nhu cầu của số lượng lớn khách hàng không 
+                  còn là điều khó khăn. Nhờ vậy mà có thể cải tiến bố trí mặt bằng và sắp xếp mặt hàng 
+                  cho phù hợp.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-3.png" alt="">
+                <h6 class="category-title">Nắm bắt tâm lý <br> khách hàng</h6>
+                <p class="category-description">
+                  <span>REVA</span> ​chính là một thước đo giúp doanh nghiệp đánh giá mức độ hài lòng 
+                  của khách hàng đối với sản phẩm, dịch vụ bằng cách thống kê thời gian khách hàng ở lại 
+                  cửa hàng, nhận diện khuôn mặt, phân tích cảm xúc nhằm đưa ra những thay đổi kịp thời.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-4.png" alt="">
+                <h6 class="category-title">Nhận diện khách <br> hàng vip</h6>
+                <p class="category-description">
+                  Ngay lập tức nhận diện khách hàng VIP giúp kịp thời phán đoán và
+                  có cách thức phục vụ, ưu đãi phù hợp.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-5.png" alt="">
+                <h6 class="category-title">Xây dựng chiến lược <br> kinh doanh</h6>
+                <p class="category-description">
+                  Với năng lực chuyên sâu về xử lý lượng lớn dữ liệu, 
+                  <span>REVA</span> sẵn sàng tư vấn, phân tích tình trạng kinh doanh giúp cửa hàng cải tiến, 
+                  gia tăng hiệu quả.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-6.png" alt="">
+                <h6 class="category-title">Đo lường hiệu quả <br> chiến dịch Marketing</h6>
+                <p class="category-description">
+                  Thấu hiểu các chủ cửa hàng, manager hoặc những giám đốc marketing không thể luôn luôn theo dõi hình ảnh realtime của cửa hàng mình, 
+                  <span>REVA</span> ​tự động gửi báo cáo theo ngày/tháng đảm bảo khách hàng luôn chủ động nắm bắt được thông tin.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-7.png" alt="">
+                <h6 class="category-title">Đánh giá quy trình <br> của nhân viên</h6>
+                <p class="category-description">
+                  Thay vì bạn liên tục phải theo dõi, giám sát hiệu quả làm việc của nhân viên trong cửa hàng thì 
+                  <span>REVA</span> tự động phát hiện việc tuân thủ quy định về đồng phục, trang thiết bị, 
+                  quy trình làm việc,...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-xl-3 category-menu">
+            <div class="card category-list">
+              <div class="card-body category-item">
+                <img class="category-image" height="118" src="./images/image-item-8.png" alt="">
+                <h6 class="category-title">Chống thất thoát <br> và an ninh</h6>
+                <p class="category-description">
+                  Chống thất thoát doanh thu bằng cách tích hợp hệ thống POS, phát hiện kẻ gian, báo cháy, báo khói,...
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container-fluild feature">
+      <h4 class="feature-title">TỔNG THỂ TÍNH NĂNG</h4>
+      <div class="feature-description text-center">
+        <img class="feature-img" src="./images/bg-4.png" alt="">
+      </div>
+    </div>
+    <section class="pricing py-5">
+      <div class="container p-0">
+        <h4 class="pricing-heading">GÓI SẢN PHẨM, GIÁ CẢ</h4>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 p-0 pricing-menu">
+            <div class="card pricing-list mb-5 mb-lg-0 ">
+              <div class="card-body pricing-item d-flex flex-column">
+                <h5 class="card-title text-uppercase text-center">STARTER</h5>
+                <h6 class="card-request text-center">cần tối thiểu 1 camera</h6>
+                <ul class="fa-ul">
+                  <li><i class="check-rounded fas fa-check-circle"></i><span>Điểm khách hàng ra vào</span></li>
+                  <li><i class="check-rounded fas fa-check-circle"></i><span>Thống kê thời gian khách ở lại cửa hàng</span></li>
+                </ul>
+                <div class="d-grid text-center mt-auto">
+                  <p class="card-price text-center">Từ 500.000đ<span class="period">/ tháng</span></p>
+                  <a href="#" class="btn btn-registration">Đăng ký sử dụng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0 pricing-menu">
+            <div class="card pricing-list mb-5 mb-lg-0">
+              <div class="card-body pricing-item d-flex flex-column">
+                <h5 class="card-title text-uppercase text-center">ADVANCE</h5>
+                <h6 class="card-request text-center">cần tối thiểu 2 camera</h6>
+                <ul class="fa-ul">
+                  <li><i class="check-rounded fas fa-check-circle"></i>Điểm khách hàng ra vào</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i>Thống kê thời gian khách ở lại cửa hàng</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i><strong>Nhận diện tuổi, giới tính</strong></li>
+                </ul>
+                <div class="d-grid text-center mt-auto">
+                  <p class="card-price text-center">Từ 700.000đ<span class="period">/ tháng</span></p>
+                  <a href="#" class="btn btn-registration">Đăng ký sử dụng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0 pricing-menu">
+            <div class="card pricing-list mb-5 mb-lg-0">
+              <div class="card-body pricing-item d-flex flex-column">
+                <h5 class="card-title text-uppercase text-center">BUSINESS</h5>
+                <h6 class="card-request text-center">Cần tối thiểu 3 camera</h6>
+                <ul class="fa-ul">
+                  <li><i class="check-rounded fas fa-check-circle"></i>Điểm khách hàng ra vào</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i>Thống kê thời gian khách ở lại cửa hàng</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i>Nhận diện tuổi, giới tính</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i><strong>Bản đồ nhiệt</strong></li>
+                </ul>
+                <div class="d-grid text-center mt-auto">
+                  <p class="card-price text-center">Từ 1.500.000đ<span class="period">/ tháng</span></p>
+                  <a href="#" class="btn btn-registration">Đăng ký sử dụng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 p-0 pricing-menu">
+            <div class="card pricing-list mb-5 mb-lg-0">
+              <div class="card-body pricing-item d-flex flex-column">
+                <h5 class="card-title text-uppercase text-center">VIP</h5>
+                <h6 class="card-request text-center">Cần tối thiểu 4 camera</h6>
+                <ul class="fa-ul">
+                  <li><i class="check-rounded fas fa-check-circle"></i>Điểm khách hàng ra vào</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i>Nhận diện tuổi, giới tính</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i>Bản đồ nhiệt</li>
+                  <li><i class="check-rounded fas fa-check-circle"></i><strong>Nhận diện khách vip</strong></li>
+                </ul>
+                <div class="d-grid text-center mt-auto">
+                  <p class="card-price text-center">Từ 4.000.000đ<span class="period">/ tháng</span></p>
+                  <a href="#" class="btn btn-registration">Đăng ký sử dụng</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <h6 class="table-title">Sau khi tham gia gói STARTER, khách hàng sẽ được tùy chọn các gói sau</h6>
+          <div class="col-12 ">
+            <div class="card table-wrapper">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th class="text-center" scope="col">No.</th>
+                    <th scope="col">Tùy chọn</th>
+                    <th class="text-center" scope="col">Giá theo tháng</th>
+                    <th class="text-center" scope="col">Yêu cầu camera</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="text-center" scope="row">01</th>
+                    <td>Nhận diện tuổi, giới tính</td>
+                    <td class="text-center">250.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">02</th>
+                    <td >Bản đồ nhiệt</td>
+                    <td class="text-center">1.000.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">03</th>
+                    <td>Tích hợp POS</td>
+                    <td class="text-center">Từ 1.000.000đ</td>
+                    <td class="text-center"></td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">04</th>
+                    <td>Nhận diện đồng phục, giám sát quy trình</td>
+                    <td class="text-center">Từ 1.000.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">05</th>
+                    <td>Thống kê lộ trình di chuyển của khách hàng</td>
+                    <td class="text-center">1.000.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">06</th>
+                    <td>Nhận diện khách hàng VIP</td>
+                    <td class="text-center">Từ 2.000.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">07</th>
+                    <td>Phát hiện kẻ gian, báo cháy, báo khói</td>
+                    <td class="text-center">Từ 2.000.000đ</td>
+                    <td class="text-center">+1 Cam Chuyên Dụng</td>
+                  </tr>
+                  <tr>
+                    <th class="text-center" scope="row">08</th>
+                    <td>Hệ thống chấm công nhận diện khuôn mặt</td>
+                    <td class="text-center">Từ 2.000.000đ</td>
+                    <td class="text-center">+1 Cam</td>
+                  </tr>
+                  <tr >
+                    <th class="text-center" scope="row">09</th>
+                    <td>Tư vấn kinh doanh, phân tích dữ liệu chuyên sâu</td>
+                    <td class="text-center">Tư vấn</td>
+                    <td class="text-center"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customers">
+      <div class="container">
+        <div class="row justify-content-center justify-content-lg-end">
+          <div class="col customers-content">
+            <h4 class="customers-title">KHÁCH HÀNG CỦA CHÚNG TÔI</h4>
+            <p class="customers-description">Chúng tôi cung cấp dịch vụ trên toàn thế giới.
+              <br> Sản phẩm hiện tại đã có mặt tại 4 quốc gia
+            </p>
+            <p class="customers-description m-0">
+              Đáp ứng đa dạng nhu cầu sử dụng và thỏa mãn cả những khách hàng khó tính nhất trên thế giới.
+            </p>
+            <p class="customers-description m-0">
+              Chúng tôi hoàn toàn tự tin giải quyết mọi vấn đề khó khăn nhất của các bạn.
+            </p>
+            <ul class="d-flex">
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="">
+                  <img class="rounded-circle customers-img" src="./images/palmers.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="">
+                  <img class="rounded-circle customers-img" src="./images/cato-1.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="">
+                  <img class="rounded-circle customers-img" src="./images/iseki.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="">
+                  <img class="rounded-circle customers-img" src="./images/lonsdale-1.png" alt="">
+                </a>
+              </li>
+            </ul>
+            <ul class="d-flex">
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <img class="rounded-circle customers-img" src="./images/arvand-1.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <img class="rounded-circle customers-img" src="./images/aqua-lung-74545.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <img class="rounded-circle customers-img" src="./images/lunchbox-catering.png" alt="">
+                </a>
+              </li>
+              <li class="customers-item d-flex justify-content-center align-items-center">
+                <a href="#">
+                  <img class="rounded-circle customers-img" src="./images/multikino-1.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="customer-experience">
+      <div class="container">
+        <h4 class="cus-exp__title text-center">TRẢI NGHIỆM TỪ KHÁCH HÀNG</h4>
+        <div class="customer-experience__carousel owl-carousel owl-theme">
+          <div class="item">
+            <div class="img-rounded-circle img-one">
+              <img class="customer-img rounded-circle" src="./images/Layer-1393.png" alt="" />
+            </div>
+            <div class="customer-info-one">
+              <h5 class="customer-name">Tú Hoàng</h5>
+              <h6 class="customer-position">CEO Wallstreet English</h6>
+              <span class="customer-address">Ho Chi Minh</span>
+              <center><hr class="line" size="3"></center>
+              <p class="customer-review ml-5 mr-5">
+                It is a long established fact that a reader will be distracted 
+                by the readable content of a page when looking at its layout
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-rounded-circle img-two">
+              <img class="customer-img rounded-circle" src="./images/Layer-1392.png" alt="" />
+            </div>
+            <div class="customer-info">
+              <h5 class="customer-name">Lê Phương</h5>
+              <h6 class="customer-position">CEO Country PeopleOps Leader</h6>
+              <span class="customer-address">Ho Noi</span>
+              <center><hr class="line" size="3"></center>
+              <p class="customer-review ml-5 mr-5">
+                It is a long established fact that a reader will be distracted 
+                by the readable content of a page when looking at its layout
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="img-rounded-circle img-three">
+              <img class="customer-img rounded-circle" src="./images/Layer-13931.png" alt="" />
+            </div>
+            <div class="customer-info">
+              <h5 class="customer-name">Nguyen Hai Van</h5>
+              <h6 class="customer-position">CEO Financial Company</h6>
+              <span class="customer-address">Vung Tau</span>
+              <center><hr class="line" size="3"></center>
+              <p class="customer-review ml-5 mr-5">
+                It is a long established fact that a reader will be distracted 
+                by the readable content of a page when looking at its layout
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="registration-form">
+      <div class="container text-center">
+        <div class="regist-heading">
+          <h4 class="regist-title">ĐĂNG KÝ SỬ DỤNG NGAY HÔM NAY</h4>
+          <h6>Chúng tôi sẽ liên hệ trực tiếp với bạn trong vòng 24h kể từ khi bạn đăng ký</h6>
+        </div>
+        <form class="row justify-content-center flex-column g-3 needs-validation" novalidate>
+          <center>
+            <div class="col-lg-7">
+              <div class="form-floating mb-3">
+                <input type="name" class="form-control" id="floatingInput" placeholder="Họ tên *"required>
+                <label class="form-label" for="floatingInput">Họ tên <span style="color:#efa00b">*</span></label>
+                <div class="invalid-feedback text-left">
+                  Họ tên không được để trống !
+                </div>
+              </div>
+            </div>
+          </center>
+          <center>
+            <div class="col-lg-7">
+              <div class="form-floating mb-3">
+                <input type="number" placeholder="Số điện thoại *" class="form-control" id="validationCustom02" value="" required>
+                <label for="validationCustom02" class="form-label">Số điện thoại <span style="color:#efa00b">*</span></label>
+                <div class="invalid-feedback text-left">
+                  Số điện thoại không được để trống !
+                </div>
+              </div>
+            </div>
+          </center>
+          <center>
+            <div class="col-lg-7">
+              <div class="form-floating mb-3">
+                <input type="email" placeholder="Địa chỉ email" class="form-control input-novalidate" id="email" novalidate>  
+                <label for="email" class="form-label">Địa chỉ email</label>
+              </div>
+            </div>
+          </center>
+          <center>
+            <div class="col-lg-7">
+              <div class="form-floating mb-3">
+                <textarea rows="4" class="form-control form-textarea input-novalidate" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea"class="form-label">Nội dung</label>
+              </div>
+            </div>
+          </center>
+         <center>
+          <div class="col-lg-7">
+            <p>Vui lòng liên hệ với chúng tôi nếu bạn cần hỗ trợ qua hotline 
+              <span style="color:#efa00b">+84 24 3554 5190</span>
+            </p>
+            <button class="btn-send btn" type="submit">Gửi</button>
+          </div>
+         </center>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="footer-logo">
+          <a href="./index.html" class=" text-white d-flex align-items-center justify-content-center">
+            REVA
+          </a>
+        </div>
+        <div class="row justify-content-center top-part">
+          <div class="col-12 col-md-9 text-center center-content">
+              <ul class="nav flex-column flex-lg-row justify-content-start mb-0">
+                <li class="nav-item footer-item d-flex align-items-center mr-0 mr-lg-5">
+                  <span class="footer-item-circle rounded-circle"><i class="fas fa-phone-alt"></i></span>
+                  +84 24 3554 5190
+                </li>
+                <li class="nav-item footer-item d-flex align-items-center mr-0 mr-lg-5">
+                  <span class="footer-item-circle rounded-circle"><i class="fas fa-envelope"></i></span>
+                  beetai_support@beetsoft.com.vn
+                </li>
+                <li class="nav-item footer-item d-flex align-items-center mr-0 mr-lg-5">
+                  <span class="footer-item-circle rounded-circle"><i class="fas fa-home"></i></span>
+                  www.reva.com
+                </li>
+              </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-9 text-center center-content">
+            <ul class="nav flex-column flex-lg-row justify-content-start">
+              <li class="nav-item footer-item d-flex align-items-center mr-0 mr-lg-5">
+                <span class="footer-item-circle rounded-circle"><i class="fab fa-facebook-f"></i></span>
+                reva
+              </li>
+              <li class="nav-item footer-item d-flex align-items-center text-left">
+                <span class="footer-item-circle rounded-circle"><i class="fas fa-map-marker-alt"></i></span>
+                6th Floor, MITEC TOWER, Lot E2, Đường <br class="d-block d-lg-none">
+                 Cầu Giấy, Yên Hoà, Cầu Giấy, Hà Nội
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <p class="footer-bottom">Copyright 2019 © REVA</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
